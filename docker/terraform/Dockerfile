@@ -18,6 +18,6 @@ COPY ./src /root/src
 
 COPY ./docker/terraform/.aws /root/.aws
 COPY ./docker/terraform/init.sh /root/init.sh
-RUN chmod +x ~/init.sh && /root/init.sh
+RUN chmod +x /root/init.sh && /root/init.sh
 
 WORKDIR /root/src
